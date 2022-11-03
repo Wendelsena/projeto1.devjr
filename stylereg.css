@@ -2,10 +2,6 @@ body{
     background-color: #F5F5F5;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body, html{
-    width: 100%;
-    margin: 0;
-}
 .container{
     background-color: #E9E9E9;
     margin:auto;
@@ -22,8 +18,8 @@ body, html{
 }
 .flex-container{
     display: flex;
-    background-color: #006A6A; 
-
+    background-color: #006B6B; 
+    padding: 1.2rem;
 }
 .header-title{
     color: #000000;
@@ -37,35 +33,30 @@ body, html{
     font-weight: 500;
     margin-bottom: 0.9rem;
 }
-.column-one{
-    display: block;
-    width: 50%;
+.column{ 
+    display: flex;
+    width: 100%;
     background-color: #006B6B;
     color: #FFFFFF;
-    padding: 1.2rem;
+    padding: 0.1rem;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
 }
-.column-one-title{
-    font-size: 1.2rem;
-    font-weight: 400;
+
+.imagen1{
     text-align: center;
-    margin-bottom: 1.2rem;
+    margin-top: -8px ;
 }
-.price{
-    font-size: 1.6rem;
-    font-weight: 700;
-}
-.mouth{
-    font-size: 0.9rem;
-    font-style: italic;
-    margin-left: 0.9rem;
-}
-.button{
-   margin-top: 1.2rem;
-   width: 100%;
+.button-register{
+   margin: 10px;
+   width: 30%;
    padding: 0.9rem 2rem;
 
-   color: #00A6A6;
+   color: #006B6B;
    background-color: #CCCCCC;
+
+   text-align: center;
   
    font-size: 1rem;
 
@@ -74,22 +65,25 @@ body, html{
 
    cursor: pointer;
 }
-.button:hover{
+.button-register:hover{
     background-color: #E9E9E9;
 }
-.column-two{
-    display: block;
-    width: 50%;
-    background-color: #009E9E;
-    color: #FFFFFF;
-    padding: 0.6rem 1.2rem;
+input{
+    width: 95%;
+    height: 22%;
+    padding: 0.9rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 0;
+    margin: 10px;
 }
-.image1{
-    text-align: center;
+input:focus{
+    outline: none;
+    box-shadow: 0 0 10px #009E9E;
 }
-.image2{
-    background-image: url("C:\Users\wende\projeto1.devjr-1\module02-example-register-mobile.png");
-    box-shadow: #006A6A;
+a{
+    color: #E9E9E9;
+    font-size: 0.8rem;
 }
 
 @media screen and (max-width: 620px) {
@@ -99,14 +93,11 @@ body, html{
     .flex-container{
         flex-direction: column;
     }
-    .column-one, .column-two{
+    .column{
         width: 100%;
         box-sizing: border-box;
     }
     .container{
         width: 95%;
-    }
-    .header{
-        padding: 15px;
     }
 }
